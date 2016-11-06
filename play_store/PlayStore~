@@ -1,0 +1,26 @@
+com.breeze.dbmeter
+
+
+keystore: /home/cj/AndroidStudioProjects/DbMeter/app/dbmeter.jks
+password: 2dxijull
+Alias: dbmeter
+
+上傳時間
+2014/12/23 
+APK 檔案 SHA1 摘要
+
+Steps:
+==================
+Android Studio: Build->Generate Signed APK
+
+cd /home/cj/AndroidStudioProjects/DbMeter/app/ 
+
+zipalign -f -v 4 app-release.apk dbmeter.apk
+
+https://play.google.com/apps/publish/?dev_acc=08567058273105642312#MarketListingPlace:p=com.breeze.dbmeter
+
+Update:
+==========================
+Gradle Scripts: build.gradle
+        versionCode 1=>
+        versionName "1.0"=>
